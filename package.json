@@ -2,22 +2,24 @@
   "scripts": {
     "start": "npx vite",
     "build": "npx vite build",
+    "unused": "npx knip",
     "outdated": "npx npm-check-updates",
     "upgrade": "npm run outdated -- -u",
     "format": "npx prettier --write ."
   },
+  "type": "module",
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/postcss": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.13",
     "@tailwindcss/typography": "^0.5.16",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "tailwindcss": "^4.1.4",
-    "typescript": "^5.8.3"
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
   },
   "postcss": {
     "plugins": {
@@ -25,6 +27,6 @@
     }
   },
   "prettier": {
-    "printWidth": 140
+    "printWidth": 400
   }
 }
