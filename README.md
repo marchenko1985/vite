@@ -28,7 +28,7 @@ Usually, when it comes to some kind of very simple app, I am used to use
   </body>
   <script type="text/babel" data-presets="react" src="index.jsx"></script>
   <script type="text/babel">
-    ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+    ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App))
   </script>
 </html>
 ```
@@ -42,3 +42,5 @@ And the anwer is kind of yes - with help of vite it seems to be doable
 Still there is a bunch of files, but they more or less will be in any project/repository
 
 Commiting it for my self in future
+
+after a while revisiting approach - in bunch of cases for small demos react is used, also - tiered with building ui from scratch each time, so have wired up shadcn, also, to avoid issues when copying samples in real project wiredup eslint with strict rules

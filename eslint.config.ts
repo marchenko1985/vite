@@ -17,6 +17,7 @@ export default defineConfig([
   {
     rules: {
       '@typescript-eslint/no-confusing-void-expression': 'off',
+      '@typescript-eslint/restrict-template-expressions': 'off',
     },
   },
 ])
