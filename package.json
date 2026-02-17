@@ -5,7 +5,8 @@
     "unused": "npx knip",
     "outdated": "npx npm-check-updates",
     "upgrade": "npm run outdated -- -u",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "lint": "eslint"
   },
   "type": "module",
   "dependencies": {
@@ -25,8 +26,10 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^5.1.4",
+    "eslint-plugin-react": "^7",
     "shadcn": "^3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-eslint": "^8"
   },
   "prettier": {
     "printWidth": 400,

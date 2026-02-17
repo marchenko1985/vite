@@ -65,7 +65,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { PlusIcon, BluetoothIcon, MoreVerticalIcon, FileIcon, FolderIcon, FolderOpenIcon, FileCodeIcon, MoreHorizontalIcon, FolderSearchIcon, SaveIcon, DownloadIcon, EyeIcon, LayoutIcon, PaletteIcon, SunIcon, MoonIcon, MonitorIcon, UserIcon, CreditCardIcon, SettingsIcon, KeyboardIcon, LanguagesIcon, BellIcon, MailIcon, ShieldIcon, HelpCircleIcon, FileTextIcon, LogOutIcon } from "lucide-react"
+import { BellIcon, BluetoothIcon, CreditCardIcon, DownloadIcon, EyeIcon, FileCodeIcon, FileIcon, FileTextIcon, FolderIcon, FolderOpenIcon, FolderSearchIcon, HelpCircleIcon, KeyboardIcon, LanguagesIcon, LayoutIcon, LogOutIcon, MailIcon, MonitorIcon, MoonIcon, MoreHorizontalIcon, MoreVerticalIcon, PaletteIcon, PlusIcon, SaveIcon, SettingsIcon, ShieldIcon, SunIcon, UserIcon } from "lucide-react"
 
 export function ComponentExample() {
   return (
@@ -256,7 +256,7 @@ function FormExample() {
                     onCheckedChange={(checked) =>
                       setNotifications({
                         ...notifications,
-                        email: checked === true,
+                        email: checked
                       })
                     }
                   >
@@ -269,7 +269,7 @@ function FormExample() {
                     onCheckedChange={(checked) =>
                       setNotifications({
                         ...notifications,
-                        sms: checked === true,
+                        sms: checked
                       })
                     }
                   >
@@ -363,7 +363,7 @@ function FormExample() {
                                     onCheckedChange={(checked) =>
                                       setNotifications({
                                         ...notifications,
-                                        push: checked === true,
+                                        push: checked
                                       })
                                     }
                                   >
@@ -376,7 +376,7 @@ function FormExample() {
                                     onCheckedChange={(checked) =>
                                       setNotifications({
                                         ...notifications,
-                                        email: checked === true,
+                                        email: checked
                                       })
                                     }
                                   >
@@ -471,7 +471,7 @@ function FormExample() {
                     <ComboboxEmpty>No frameworks found.</ComboboxEmpty>
                     <ComboboxList>
                       {(item) => (
-                        <ComboboxItem key={item} value={item}>
+                        <ComboboxItem key={String(item)} value={String(item)}>
                           {item}
                         </ComboboxItem>
                       )}
